@@ -1,0 +1,27 @@
+{
+  "name": "gitlab-gantt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc --build",
+    "start": "rimraf ./dist && pnpm build && node dist/index.js"
+  },
+  "keywords": [],
+  "author": "Anderson Dapper Rocha <anderson@andersondapper.com.br>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.11.19",
+    "@typescript-eslint/parser": "^7.0.2",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "prettier": "^3.2.5",
+    "rimraf": "^5.0.5",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@gitbeaker/rest": "^39.34.2",
+    "dotenv": "^16.4.5"
+  }
+}
